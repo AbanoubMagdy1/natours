@@ -41,7 +41,7 @@ header{
     position: relative;
 }
 
-header .title{
+.header__title{
     position: absolute;
     top : 40%;
     left : 50%;
@@ -50,18 +50,18 @@ header .title{
     text-transform: uppercase;
 }
 
-.title h1 span{
+.header__title h1 span{
     display: block;
 }
 
-.title .title-main{
+.header__title--main{
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 3.6rem;
     animation: moveRight 1.5s ease-in;
 }
 
-.title .title-sub{
+.header__title--sub{
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.7rem;
@@ -70,8 +70,8 @@ header .title{
     animation: moveLeft 1.5s ease-in;
 }
 
-.title .btn{
-    margin: 3rem auto 0;
+.header__title .btn{
+    margin: 5rem auto 0;
 }
 
 .btn{
@@ -87,7 +87,7 @@ header .title{
     transition: 0.3s all ease-in;
 }
 
-.btn-white{
+.btn--white{
     background-color: white;
     color : #777
 }
@@ -117,17 +117,17 @@ header .title{
     opacity: 0;
 }
 
-.btn-animated{
+.btn--animated{
     animation: moveUp 1s 1.5s backwards ease-in ;
 }
 
-header .logo{
+.header__logo{
     position: absolute;
     top : 30px;
     left : 30px;
 }
 
-.logo img{
+.header__logo img{
     height : 35px;
 }
 
