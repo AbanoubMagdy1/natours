@@ -7,18 +7,24 @@ Dark green: #28b485
 
 */
 
-*{
+*,
+::after,
+::before{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
 }
 
 body{
     font-family: 'Lato', sans-serif;
-    font-size: 16px;
     color : #777;
     line-height: 1.7;
     padding: 30px;
+    box-sizing: border-box;
 }
 
 header{
@@ -49,18 +55,19 @@ header .title{
 }
 
 .title .title-main{
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 35px;
-    animation: moveRight 1s ease-in;
+    letter-spacing: 3.6rem;
+    animation: moveRight 1.5s ease-in;
 }
 
 .title .title-sub{
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 17.4px;
-    margin-left: 8px;
-    animation: moveLeft 1s ease-in;
+    letter-spacing: 1.7rem;
+    margin-left: .8rem;
+    margin-bottom: 3rem;
+    animation: moveLeft 1.5s ease-in;
 }
 
 .title .btn{
@@ -70,11 +77,11 @@ header .title{
 .btn{
     display: block;
     cursor: pointer;
-    padding: 1.3rem 2.2rem;
+    padding: 2rem 3rem;
     border : none;
     outline: none;
-    border-radius: 30px;
-    font-size: 18px;
+    border-radius: 3rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
     position: relative;
     transition: 0.3s all ease-in;
@@ -86,12 +93,12 @@ header .title{
 }
 
 .btn:hover{
-    transform: translateY(-3px);
-    box-shadow: 0px 10px 30px rgba(0,0,0,0.30);
+    transform: translateY(-.3rem);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.30);
 }
 
 .btn:active{
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.30);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.30);
 }
 
 .btn::before{
@@ -99,7 +106,7 @@ header .title{
     position: absolute;
     z-index: -1;
     inset: 0;
-    border-radius: 30px;
+    border-radius: 3rem;
     background-color: white;
     transform-origin: center;
     transition: 0.4s all ease-out;
@@ -111,7 +118,7 @@ header .title{
 }
 
 .btn-animated{
-    animation: moveUp 1s ease-in;
+    animation: moveUp 1s 1.5s backwards ease-in ;
 }
 
 header .logo{
