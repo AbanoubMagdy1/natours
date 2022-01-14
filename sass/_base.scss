@@ -1,0 +1,35 @@
+/*
+COLORS:
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+
+
+:root{
+    --light-green : 126, 213, 111;
+    --medium-green : 84, 196, 122;
+    --dark-green : 39, 180, 133;
+}
+
+
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    color : #777;
+    line-height: 1.7;
+    padding: 30px;
+    box-sizing: border-box;
+}
