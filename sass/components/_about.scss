@@ -1,0 +1,22 @@
+.about{
+    min-height: 60vh;
+    background-color: rgb(var(--light-grey));
+    padding-top: 30rem;
+    margin-top: -20rem;
+
+    &__title{
+        text-align: center;
+        font-size: 4.5rem;
+        -webkit-background-clip: text;
+        color : transparent;
+        background-image: linear-gradient(to right,
+                        rgb(var(--light-green)), 
+                        rgb(var(--dark-green)));
+        transition: all 0.3s;
+        
+        &:hover{
+            transform: skew(10deg, 2deg) scale(1.1);
+            text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    }
+}

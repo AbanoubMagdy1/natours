@@ -1,8 +1,9 @@
-@import '_base.scss';
-@import 'components/_btn';
+@import 'base/base';
+@import 'base/animations';
 
-@import 'animations/header';
+@import 'components/_btn';
 @import 'components/_header';
+@import 'components/about'
 
 
 

@@ -12,8 +12,11 @@
 
     &--white{
         background-color: white;
-        color : #777
-    
+        color : rgb(var(--dark-grey));
+        
+        &::before{
+            background-color: white;
+        }
     }
 
     &:hover{
@@ -37,7 +40,6 @@
         z-index: -1;
         inset: 0;
         border-radius: 3rem;
-        background-color: white;
         transform-origin: center;
         transition: 0.4s all ease-out;    
     }
