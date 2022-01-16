@@ -11,7 +11,7 @@ Dark green: #28b485
     --light-green : 126, 213, 111;
     --medium-green : 84, 196, 122;
     --dark-green : 39, 180, 133;
-    --light-grey : 235, 235, 235;
+    --light-grey : 240, 240, 240;
     --dark-grey : 119, 119, 119;
 }
 
@@ -30,6 +30,7 @@ html{
 
 body{
     font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
     color : #777;
     line-height: 1.7;
     padding: 30px;

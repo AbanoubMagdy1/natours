@@ -1,12 +1,13 @@
 .about{
-    min-height: 60vh;
     background-color: rgb(var(--light-grey));
-    padding-top: 30rem;
-    margin-top: -20rem;
+    padding-top: 25rem;
+    margin-top: -15vh;
 
     &__title{
+        margin-bottom: 2rem;
         text-align: center;
         font-size: 4.5rem;
+        text-transform: uppercase;
         -webkit-background-clip: text;
         color : transparent;
         background-image: linear-gradient(to right,
@@ -17,6 +18,35 @@
         &:hover{
             transform: skew(10deg, 2deg) scale(1.1);
             text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    &__body{
+        display: flex;
+        justify-content: flex-start;
+        margin : 4rem auto;
+        width : 120rem;
+        max-width: 95%;
+        padding-bottom: 3rem;
+
+        div{
+            flex : 1 0 50%;
+        }
+
+        &--left{
+            .paragraph{
+                margin-bottom: 2.5rem;
+
+                h3{
+                    font-size: 1.8rem;
+                    text-transform: uppercase;
+                    margin-bottom: 1rem;
+                }
+
+                p{
+                    font-size: 1.5rem;
+                }
+            }
         }
     }
 }
