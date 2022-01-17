@@ -35,6 +35,13 @@ body {
   box-sizing: border-box;
 }
 
+.section {
+  margin-top: -15.5vh;
+  padding-top: 25rem;
+  padding-bottom: 6rem;
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+}
+
 @keyframes moveLeft {
   0% {
     opacity: 0;
@@ -185,11 +192,9 @@ body {
 
 .about {
   background-color: rgb(var(--light-grey));
-  padding-top: 25rem;
-  margin-top: -15vh;
 }
 .about__title {
-  margin-bottom: 2rem;
+  margin: 1rem 0 2rem;
   text-align: center;
   font-size: 4.5rem;
   text-transform: uppercase;
@@ -204,6 +209,7 @@ body {
 }
 .about__body {
   display: flex;
+  gap: 1rem;
   justify-content: flex-start;
   margin: 4rem auto;
   width: 120rem;
@@ -223,6 +229,34 @@ body {
 }
 .about__body--left .paragraph p {
   font-size: 1.5rem;
+}
+.about__body--right {
+  position: relative;
+}
+.about__body--right img {
+  position: absolute;
+  display: inline-block;
+  transition: 0.3s all;
+}
+.about__body--right img.first {
+  left: 0;
+  top: 0;
+}
+.about__body--right img.second {
+  left: 20%;
+  bottom: 0;
+  z-index: 10;
+}
+.about__body--right img.third {
+  right: 4rem;
+  top: 10%;
+}
+.about__body--right img:hover {
+  outline: 8px solid rgb(var(--medium-green));
+  border-radius: 15px;
+  padding: 1rem;
+  transform: scale(1.2);
+  z-index: 20;
 }
 
 /*# sourceMappingURL=style.css.map */

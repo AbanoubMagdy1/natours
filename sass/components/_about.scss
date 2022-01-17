@@ -1,10 +1,8 @@
 .about{
     background-color: rgb(var(--light-grey));
-    padding-top: 25rem;
-    margin-top: -15vh;
 
     &__title{
-        margin-bottom: 2rem;
+        margin: 1rem 0 2rem;
         text-align: center;
         font-size: 4.5rem;
         text-transform: uppercase;
@@ -23,6 +21,7 @@
 
     &__body{
         display: flex;
+        gap : 1rem;
         justify-content: flex-start;
         margin : 4rem auto;
         width : 120rem;
@@ -45,6 +44,38 @@
 
                 p{
                     font-size: 1.5rem;
+                }
+            }
+        }
+
+        &--right{
+            position: relative;
+
+            img{
+                position: absolute;
+                display: inline-block;
+                transition: .3s all;
+
+                &.first{
+                    left : 0;
+                    top : 0;
+                }
+                &.second{
+                    left : 20%;
+                    bottom : 0;
+                    z-index: 10;
+                }
+                &.third{
+                    right : 4rem;
+                    top : 10%;
+                }
+
+                &:hover{
+                    outline : 8px solid rgb(var(--medium-green));
+                    border-radius: 15px;
+                    padding : 1rem;
+                    transform: scale(1.2);
+                    z-index: 20;
                 }
             }
         }
