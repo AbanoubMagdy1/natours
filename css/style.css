@@ -12,6 +12,9 @@ Dark green: #28b485
   --dark-green: 39, 180, 133;
   --light-grey: 240, 240, 240;
   --dark-grey: 119, 119, 119;
+  --grid-width: 110rem;
+  --vertical-gap: 1.5rem;
+  --horizontal-gap: 1.5rem;
 }
 
 *,
@@ -81,6 +84,34 @@ body {
     transform: translateX(0);
   }
 }
+.row {
+  margin: 0 auto;
+  max-width: var(--grid-width);
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row:not(:last-child) {
+  margin-bottom: var(--horizontal-gap);
+}
+.row [class^=col-] {
+  float: left;
+}
+.row [class^=col-]:not(:last-child) {
+  margin-right: var(--vertical-gap);
+}
+.row .col-1-of-2 {
+  width: calc((100% - var(--vertical-gap)) / 2);
+}
+.row .col-1-of-3 {
+  width: calc((100% - 2 * var(--vertical-gap)) / 3);
+}
+.row .col-2-of-3 {
+  width: calc(2 * (100% - 2 * var(--vertical-gap)) / 3 + var(--vertical-gap));
+}
+
 .btn-link {
   display: inline-block;
   font-size: 1.8rem;
@@ -147,7 +178,7 @@ body {
   background-image: linear-gradient(to bottom right, rgba(var(--light-green), 0.8), rgba(var(--dark-green), 0.8)), url("../img/hero.jpg");
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
   position: relative;
 }
 .header__title {
@@ -257,6 +288,10 @@ body {
   padding: 1rem;
   transform: scale(1.2);
   z-index: 20;
+}
+
+.about {
+  margin-top: -20vh;
 }
 
 /*# sourceMappingURL=style.css.map */

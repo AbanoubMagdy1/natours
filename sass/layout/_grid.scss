@@ -1,0 +1,29 @@
+.row{
+    @include clearfix();
+    margin: 0 auto;
+    max-width: var(--grid-width);
+
+    &:not(:last-child){
+        margin-bottom: var(--horizontal-gap);
+    }
+    
+    [class^="col-"]{
+        float: left;
+
+        &:not(:last-child){
+            margin-right: var(--vertical-gap);
+        }    
+    }
+
+    .col-1-of-2{
+        width: calc((100% - var(--vertical-gap)) / 2)
+    }
+
+    .col-1-of-3{
+        width: calc((100% - (2 * var(--vertical-gap))) / 3)
+    }
+
+    .col-2-of-3{
+        width :calc(2 * ((100% - (2 * var(--vertical-gap))) / 3) + var(--vertical-gap))
+    }
+}
