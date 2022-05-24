@@ -26,4 +26,9 @@
     .col-2-of-3{
         width :calc(2 * ((100% - (2 * var(--vertical-gap))) / 3) + var(--vertical-gap))
     }
+
+    .col-1-of-4{
+        width: calc((100% - (3 * var(--vertical-gap))) / 4)
+
+    }
 }

@@ -8,6 +8,7 @@ Dark green: #28b485
 
 /*Colors in rgb*/
 :root{
+    --white: 255, 255, 255;
     --black: 0, 0, 0;
     --light-green : 126, 213, 111;
     --medium-green : 84, 196, 122;
@@ -16,7 +17,7 @@ Dark green: #28b485
     --dark-grey : 119, 119, 119;
 
     --grid-width: 110rem;
-    --vertical-gap: 1.5rem;
+    --vertical-gap: 4rem;
     --horizontal-gap: 1.5rem; 
 }
 
