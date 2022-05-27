@@ -19,6 +19,15 @@
         }
     }
 
+    &--primary{
+        background-color: rgb(var(--primary-medium));
+        color : rgb(var(--white));
+        
+        &::before{
+            background-color: rgb(var(--primary-medium));
+        }
+    }
+
     &:hover{
         transform: translateY(-.3rem);
         box-shadow: 0 10px 30px rgba(0,0,0,0.30);    

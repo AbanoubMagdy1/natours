@@ -12,8 +12,8 @@ Dark green: #28b485
   --primary-light: 126, 213, 111;
   --primary-medium: 84, 196, 122;
   --primary-dark: 39, 180, 133;
-  --secondary-light: 228, 151, 63;
-  --secondary-dark: 161, 102, 35;
+  --secondary-light: 255, 185, 0;
+  --secondary-dark: 255, 112, 48;
   --tertiary-light: 60, 111, 221;
   --tertiary-dark: 8, 19, 142;
   --grey-light: 240, 240, 240;
@@ -55,6 +55,11 @@ body {
   text-align: center;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+}
+
 .mb-big {
   margin-bottom: 8rem;
 }
@@ -65,6 +70,18 @@ body {
 
 .mb-small {
   margin-bottom: 2rem;
+}
+
+.mt-big {
+  margin-top: 10rem;
+}
+
+.mt-medium {
+  margin-top: 4rem;
+}
+
+.mt-small {
+  margin-top: 2rem;
 }
 
 @keyframes moveLeft {
@@ -107,7 +124,7 @@ body {
   }
 }
 .heading-secondary {
-  font-size: 4.5rem;
+  font-size: 3.7rem;
   text-transform: uppercase;
   background-clip: text;
   -webkit-background-clip: text;
@@ -201,6 +218,13 @@ body {
 }
 .btn--white::before {
   background-color: white;
+}
+.btn--primary {
+  background-color: rgb(var(--primary-medium));
+  color: rgb(var(--white));
+}
+.btn--primary::before {
+  background-color: rgb(var(--primary-medium));
 }
 .btn:hover {
   transform: translateY(-0.3rem);
@@ -329,6 +353,119 @@ body {
   box-shadow: 0 1.5rem 1.5rem rgba(var(--black), 0.4);
 }
 
+.card {
+  perspective: 120rem;
+  -webkit-perspective: 120rem;
+  -moz-perspective: 120rem;
+  height: 50rem;
+  position: relative;
+}
+.card__side {
+  border-radius: 4px;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 10px 10px rgb(var(--black), 0.2);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.6s;
+  backface-visibility: hidden;
+}
+.card__side--front {
+  background-color: rgb(var(--white));
+}
+.card__side--back {
+  transform: rotateY(180deg);
+  display: grid;
+  place-items: center;
+}
+.card__side--back-1 {
+  background-image: linear-gradient(to bottom right, rgb(var(--secondary-light)), rgb(var(--secondary-dark)));
+}
+.card__side--back-2 {
+  background-image: linear-gradient(to bottom right, rgb(var(--primary-light)), rgb(var(--primary-dark)));
+}
+.card__side--back-3 {
+  background-image: linear-gradient(to bottom right, rgb(var(--tertiary-light)), rgb(var(--tertiary-dark)));
+}
+.card:hover .card__side--front {
+  transform: rotateY(-180deg);
+}
+.card:hover .card__side--back {
+  transform: rotateY(0);
+}
+.card__photo {
+  height: 40%;
+  background-size: cover;
+  background-blend-mode: screen;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+.card__photo-1 {
+  background-image: linear-gradient(to right, rgb(var(--secondary-light)), rgb(var(--secondary-dark))), url("../../img/nat-5.jpg");
+}
+.card__photo-2 {
+  background-image: linear-gradient(to right, rgb(var(--primary-light)), rgb(var(--primary-dark))), url("../../img/nat-6.jpg");
+}
+.card__photo-3 {
+  background-image: linear-gradient(to right, rgb(var(--tertiary-light)), rgb(var(--tertiary-dark))), url("../../img/nat-7.jpg");
+}
+.card__header {
+  position: absolute;
+  top: 10rem;
+  right: 2rem;
+  text-align: right;
+  width: 70%;
+}
+.card__header--text {
+  font-size: 3rem;
+  color: rgb(var(--white));
+  font-weight: 300;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.card__header--text-1 {
+  background-image: linear-gradient(to right, rgb(var(--secondary-light)), rgb(var(--secondary-dark)));
+}
+.card__header--text-2 {
+  background-image: linear-gradient(to right, rgb(var(--primary-light)), rgb(var(--primary-dark)));
+}
+.card__header--text-3 {
+  background-image: linear-gradient(to right, rgb(var(--tertiary-light)), rgb(var(--tertiary-dark)));
+}
+.card__details {
+  margin-top: 4rem;
+}
+.card__details ul {
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.card__details ul li {
+  color: rgb(var(--grey-dark));
+  padding: 1rem 0;
+}
+.card__details ul li:not(:last-child) {
+  border-bottom: 1px solid rgb(var(--grey-light));
+}
+.card__only {
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.card__price {
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-weight: 100;
+  margin: 1rem 0 6rem;
+  font-size: 5rem;
+}
+
 .section-about {
   margin-top: -20vh;
   padding: 20rem 0;
@@ -344,6 +481,12 @@ body {
 }
 .section-features > * {
   transform: skewY(7deg);
+}
+
+.section-tours {
+  margin-top: -10rem;
+  padding: 25rem 0;
+  background-color: rgb(var(--grey-light));
 }
 
 /*# sourceMappingURL=style.css.map */
