@@ -5,8 +5,8 @@
     -webkit-background-clip: text;
     color : transparent;
     background-image: linear-gradient(to right,
-                    rgb(var(--light-green)), 
-                    rgb(var(--dark-green)));
+                    rgb(var(--primary-light)), 
+                    rgb(var(--primary-dark)));
     transition: all 0.3s;
     
     &:hover{

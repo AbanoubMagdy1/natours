@@ -10,11 +10,18 @@ Dark green: #28b485
 :root{
     --white: 255, 255, 255;
     --black: 0, 0, 0;
-    --light-green : 126, 213, 111;
-    --medium-green : 84, 196, 122;
-    --dark-green : 39, 180, 133;
-    --light-grey : 240, 240, 240;
-    --dark-grey : 119, 119, 119;
+    --primary-light : 126, 213, 111;
+    --primary-medium : 84, 196, 122;
+    --primary-dark : 39, 180, 133;
+
+    --secondary-light: 228, 151, 63;
+    --secondary-dark: 161, 102, 35;
+
+    --tertiary-light: 60, 111, 221;
+    --tertiary-dark: 8, 19, 142;
+
+    --grey-light : 240, 240, 240;
+    --grey-dark : 119, 119, 119;
 
     --grid-width: 110rem;
     --vertical-gap: 4rem;

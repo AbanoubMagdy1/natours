@@ -2,14 +2,14 @@
     display: inline-block;
     font-size: 1.8rem;
     text-decoration: none;
-    border-bottom: 1px solid rgb(var(--dark-green));
-    color : rgb(var(--medium-green));
+    border-bottom: 1px solid rgb(var(--primary-dark));
+    color : rgb(var(--primary-medium));
     padding-bottom: .3rem;
     transition: .3s all;
 
     &:hover{
         color : white;
-        background-color: rgb(var(--dark-green));
+        background-color: rgb(var(--primary-dark));
         transform: translateY(-3px);
         box-shadow: 0 10px 30px rgb(0, 0,0, 0.2);
     }
