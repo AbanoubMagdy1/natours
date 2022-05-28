@@ -30,14 +30,16 @@
 .section-testimonals{
     padding: 15rem 0 5rem;
     background-color: rgba(var(--grey-light), .8);
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
 
     &__video{
         position: absolute;
         top: 0;
         left: 0;
         height: 100%;
+        width: 100%;
+        object-fit: cover;
         opacity: .8;
         z-index: -1;
     }

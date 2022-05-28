@@ -472,46 +472,45 @@ body {
   padding: 7rem 5.5rem;
   max-width: calc(var(--grid-width) - 22rem);
   margin: 5rem auto;
-  min-height: 10rem;
-  display: flex;
-  align-items: center;
   box-shadow: 0 1.5rem 3rem rgba(var(--black), 0.2);
 }
 .testimonal__photo {
   position: relative;
-  width: 30rem;
+  width: 13rem;
   aspect-ratio: 1/1;
   margin-right: 2rem;
   overflow: hidden;
+  float: left;
+  border-radius: 50%;
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  -moz-shape-outside: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
 }
 .testimonal__photo img {
   display: block;
   width: 100%;
   height: 100%;
-  border-radius: 50%;
-  transition: 0.3s filter;
+  transition: 0.3s all;
+  transform: scale(1.2);
 }
 .testimonal__photo::after {
   content: attr(title);
   color: rgb(var(--white));
   position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  background-color: rgb(var(--grey-dark), 0.1);
-  font-size: 2.4rem;
-  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  font-size: 1.7rem;
   opacity: 0;
-  transform: translateY(30%) scale(0.9);
   transition: 0.3s all;
 }
 .testimonal:hover .testimonal__photo img {
-  filter: blur(2px);
+  filter: blur(2px) brightness(80%);
+  transform: scale(1);
 }
 .testimonal:hover .testimonal__photo::after {
   opacity: 1;
-  transform: translateY(0) scale(1);
+  transform: translate(-50%, -50%);
 }
 .testimonal > * {
   transform: skewX(15deg);
@@ -543,14 +542,16 @@ body {
 .section-testimonals {
   padding: 15rem 0 5rem;
   background-color: rgba(var(--grey-light), 0.8);
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 .section-testimonals__video {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
+  width: 100%;
+  object-fit: cover;
   opacity: 0.8;
   z-index: -1;
 }
