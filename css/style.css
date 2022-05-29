@@ -18,6 +18,7 @@ Dark green: #28b485
   --tertiary-dark: 8, 19, 142;
   --grey-light: 240, 240, 240;
   --grey-dark: 119, 119, 119;
+  --grey-very-dark: 51, 51, 51;
   --grid-width: 110rem;
   --vertical-gap: 4rem;
   --horizontal-gap: 1.5rem;
@@ -42,6 +43,11 @@ body {
   line-height: 1.7;
   padding: 30px;
   box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .section {
@@ -538,6 +544,7 @@ body {
   border: none;
   border-bottom: 3px solid transparent;
   outline: none;
+  font-family: inherit;
   background-color: rgb(var(--white));
   padding: 1rem 1.5rem;
   color: var(--grey-dark);
@@ -602,6 +609,35 @@ body {
   margin-right: 5rem;
 }
 
+.footer__logo {
+  margin-bottom: 7rem;
+}
+.footer__side {
+  display: inline-block;
+  padding-top: 2rem;
+  border-top: 1px solid white;
+}
+.footer__links {
+  list-style: none;
+}
+.footer__link {
+  display: inline-block;
+  color: white;
+  background-color: rgb(var(--grey-very-dark));
+  transition: all 0.3s;
+}
+.footer__link:hover {
+  color: rgb(var(--primary-dark));
+  box-shadow: 0 1.5rem 4rem rgba(var(--black), 0.15);
+  transform: scale(1.2) rotate(8deg);
+}
+.footer__link:not(:last-child) {
+  margin-right: 1rem;
+}
+.footer__paragraph {
+  color: white;
+}
+
 .section-about {
   margin-top: -20vh;
   padding: 20rem 0;
@@ -646,6 +682,11 @@ body {
   padding: 10rem 0;
   background-image: linear-gradient(to right bottom, rgb(var(--primary-light)), rgb(var(--primary-dark)));
   min-height: 30rem;
+}
+
+.section-footer {
+  background-color: rgb(var(--grey-very-dark));
+  padding: 15rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,38 @@
+.footer{
+    &__logo{
+        margin-bottom: 7rem;
+    }
+
+    &__side{
+        display: inline-block;
+        padding-top: 2rem;
+        border-top: 1px solid white;
+    }
+
+    &__links{
+        list-style: none;
+    }
+
+    &__link{
+        display: inline-block;
+        color: white;
+        background-color: rgb(var(--grey-very-dark));
+        transition: all .3s;
+
+        &:hover{
+            color: rgb(var(--primary-dark));
+            box-shadow: 0 1.5rem 4rem rgba(var(--black), .15);
+            transform: scale(1.2) rotate(8deg);
+        }
+
+        &:not(:last-child){
+            margin-right: 1rem;
+        }
+    }
+
+    &__paragraph{
+        color: white;
+    }
+}
+
+

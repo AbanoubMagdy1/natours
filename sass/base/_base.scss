@@ -23,6 +23,8 @@ Dark green: #28b485
     --grey-light : 240, 240, 240;
     --grey-dark : 119, 119, 119;
 
+    --grey-very-dark: 51, 51, 51;
+
     --grid-width: 110rem;
     --vertical-gap: 4rem;
     --horizontal-gap: 1.5rem; 
@@ -48,4 +50,9 @@ body{
     line-height: 1.7;
     padding: 30px;
     box-sizing: border-box;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
 }
