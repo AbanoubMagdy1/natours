@@ -1,0 +1,19 @@
+.booking-card{
+    max-width: calc(var(--grid-width));
+    margin: 0 auto;
+    padding: 5rem;
+    border-radius: 3px;
+    background-image: linear-gradient(
+        105deg,
+        rgba(var(--white), .9) 0%,
+        rgba(var(--white), .9) 50%,
+        transparent 50%,
+        transparent 100%,
+    ) ,url("../img/nat-10.jpg");
+    background-size: cover;
+    box-shadow: 0 1.5rem 3rem rgba(var(--black), .15);
+
+    &__form{
+        width: 50%;
+    }
+}

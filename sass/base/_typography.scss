@@ -7,10 +7,11 @@
     background-image: linear-gradient(to right,
                     rgb(var(--primary-light)), 
                     rgb(var(--primary-dark)));
+    transform-origin: center;                
     transition: all 0.3s;
     
     &:hover{
-        transform: skew(10deg, 2deg) scale(1.1);
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
         text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
 }

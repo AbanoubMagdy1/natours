@@ -44,3 +44,13 @@
         z-index: -1;
     }
 }
+
+.section-booking{
+    padding: 10rem 0;
+    background-image: linear-gradient(
+        to right bottom,
+        rgb(var(--primary-light)),
+        rgb(var(--primary-dark)),
+    );
+    min-height: 30rem;
+}

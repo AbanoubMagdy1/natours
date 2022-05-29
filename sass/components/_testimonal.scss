@@ -32,7 +32,7 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -20%);
+            transform: translate(-36%, -20%);
             font-size: 1.7rem;
             opacity: 0;
             transition: .3s all;
@@ -48,7 +48,7 @@
 
         &::after{
             opacity: 1;
-            transform: translate(-50%, -50%);
+            transform: translate(-36%, -50%);
         }
 
     } 
