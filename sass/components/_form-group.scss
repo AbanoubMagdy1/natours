@@ -11,7 +11,7 @@
     background-color: rgb(var(--white));
     padding: 1rem 1.5rem;
     color: var(--grey-dark);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     transition: .3s all;
     width: 90%;
     transition: .3s all;
@@ -24,8 +24,8 @@
         font-size: 1.4rem;
         font-weight: 600;
         transform: translateY(-3rem);
-        margin-left: 2rem;
         margin-top: .5rem;
+        margin-left: 1.5rem;
         opacity: 0;
         transition: all .3s;
     }
@@ -41,7 +41,7 @@
 
     &:not(:placeholder-shown) ~ label{
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(-7.5rem);
     }
 }
 
@@ -50,7 +50,7 @@
     appearance: none;
     width: 2.5rem;
     height: 2.5rem;
-    border: 3px solid rgb(var(--primary-medium));
+    border: 5px solid rgb(var(--primary-medium));
     border-radius: 50%;
     transform: translateY(.5rem);
     position: relative;
@@ -58,7 +58,7 @@
     &::before{
         content: '';
         position: absolute;
-        inset: 3px;
+        inset: 2px;
         border-radius: 50%;
         background-color: rgb(var(--primary-medium));
         opacity: 0;
