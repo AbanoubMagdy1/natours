@@ -50,11 +50,60 @@
 
     &__logo{
         position: absolute;
-        top : 30px;
-        left : 30px;
+        top : 3rem;
+        left : 3rem;
 
         img{
-            height : 35px;
+            height : 3.5rem;
+        }
+    }
+
+    &__hamburger{
+        cursor: pointer;
+        position: fixed;
+        z-index: 20000;
+        top: 6rem;
+        right: 6rem;
+        background-color: rgb(var(--white));
+        width: 6rem;
+        height: 6rem;
+        transition: .3s box-shadow;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+
+        .line{
+            width: 50%;
+            height: 2px;
+            background-color: rgb(var(--black));
+            transition: .4s all;
+
+            &:nth-child(1){
+                transform-origin: 31px 6px;
+            }
+            &:nth-child(3){
+                transform-origin: 27px -4px;
+            }
+
+            &:not(:last-child){
+                margin-bottom: 1rem;
+            }
+        }
+
+        &.open .line:nth-child(1){
+            transform: rotate(calc(-45deg + 360deg));
+        }
+        &.open .line:nth-child(2){
+            opacity: 0;
+        }
+        &.open .line:nth-child(3){
+            transform: rotate(calc(45deg + 360deg));
+        }
+
+        &:hover{
+            box-shadow: 0 1.5rem 4rem rgba(var(--black), .15);
         }
     }
 }

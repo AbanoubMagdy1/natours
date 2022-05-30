@@ -50,6 +50,8 @@ body{
     line-height: 1.7;
     padding: 30px;
     box-sizing: border-box;
+    counter-reset: nav-links;
+      
 }
 
 a{
