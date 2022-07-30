@@ -4,7 +4,7 @@
     width: var(--grid-width);
     max-width: 90%;
     @include respond(tab-port){
-        width: 400px;
+        width: 600px;
         max-width: 90%;
     }
 

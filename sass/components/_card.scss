@@ -5,6 +5,8 @@
     height: 50rem;
     position: relative;
 
+    @include respond(tab-port){max-width: 400px; margin: 0 auto;}
+
     &__side{
         border-radius: 4px;
         height: 100%;
