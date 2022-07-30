@@ -1,6 +1,8 @@
 .composition{
     position: relative;
 
+    @include respond(tab-port){margin-top: 3rem;}
+
     &__photo{
         position: absolute;
         width: 55%;
@@ -32,7 +34,7 @@
         }
     }
 
-    &:hover .composition__photo:not(:hover){
+    &:hover &__photo:not(:hover){
         transform: scale(.92);
     }
 }

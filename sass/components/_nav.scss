@@ -7,11 +7,17 @@
         rgb(var(--primary-light)),
         rgb(var(--primary-dark)),
     );
-    -webkit-clip-path: circle(25px at calc(100% - 90px) 92px);
-    clip-path: circle(25px at calc(100% - 90px) 92px);
+    -webkit-clip-path: circle(15px at calc(100% - 90px) 92px);
+    clip-path: circle(15px at calc(100% - 90px) 92px);
     transition: 1s all cubic-bezier(.66,-0.07,.04,1.35);
     display: grid;
     place-items: center;
+
+    @include respond(tab-port){
+        -webkit-clip-path: circle(15px at calc(100% - 50px) 50px);
+        clip-path: circle(15px at calc(100% - 50px) 50px);    
+    }
+
 
     &__list{
         list-style: none;

@@ -9,6 +9,10 @@
                     rgb(var(--primary-dark)));
     transform-origin: center;                
     transition: all 0.3s;
+
+    @include respond(tab-port){font-size: 3rem;}
+    @include respond(phone){font-size: 2.2rem;}
+
     
     &:hover{
         transform: skewY(2deg) skewX(15deg) scale(1.1);

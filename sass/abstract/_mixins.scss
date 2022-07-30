@@ -12,3 +12,17 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+$screen-sizes: (
+    "phone": 600px,
+     "tab-port": 900px,
+     "tab-land": 1200px,
+    );
+
+@mixin respond($size){
+    @if $size == desktop {
+        @media (min-width: 1800px){@content}
+    } @else {
+        @media (max-width: map-get($screen-sizes, $size)){@content}
+    }
+}

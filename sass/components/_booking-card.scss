@@ -13,7 +13,19 @@
     background-size: cover;
     box-shadow: 0 1.5rem 3rem rgba(var(--black), .15);
 
+    @include respond(tab-port){
+        max-width: 95%;
+        margin: 2rem auto;
+        padding: 4rem;
+        background-image: linear-gradient(
+            rgba(var(--white), .9) 0%,
+            rgba(var(--white), .9) 100%,
+        ) ,url("../img/nat-10.jpg");
+    }
+
     &__form{
         width: 50%;
+
+        @include respond(tab-port){width: 90%;}
     }
 }

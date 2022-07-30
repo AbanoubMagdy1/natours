@@ -6,6 +6,13 @@
     margin: 5rem auto;
     box-shadow: 0 1.5rem 3rem rgba(var(--black), .2);
 
+    @include respond(tab-port){
+        padding: 5rem 3rem;
+        transform: skewX(-6deg);
+        width: 90%;
+    }
+
+
     &__photo{
         position: relative;
         width: 13rem;
@@ -55,5 +62,10 @@
 
     > * {
         transform: skewX(15deg);
+
+        @include respond(tab-port){
+            transform: skewX(6deg);
+        }
+    
     }
 }

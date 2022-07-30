@@ -27,7 +27,7 @@ Dark green: #28b485
 
     --grid-width: 110rem;
     --vertical-gap: 4rem;
-    --horizontal-gap: 1.5rem; 
+    --horizontal-gap: 5rem; 
 }
 
 
@@ -40,7 +40,11 @@ Dark green: #28b485
 }
 
 html{
-    font-size: 62.5%;
+    font-size: 62.5%; /*10px*/
+
+    @include respond(tab-port){font-size: 56.25%;} /* 9px*/
+    @include respond(phone){font-size: 50%;} /* 8px*/
+    @include respond(desktop){font-size: 75%;} /* 12px*/
 }
 
 body{
@@ -51,7 +55,8 @@ body{
     padding: 30px;
     box-sizing: border-box;
     counter-reset: nav-links;
-      
+    
+    @include respond(tab-port){padding: 0;} /* 9px*/
 }
 
 a{
