@@ -913,6 +913,11 @@ a {
 .footer__logo {
   margin-bottom: 7rem;
 }
+@media (max-width: 900px) {
+  .footer__logo-img {
+    height: 5rem;
+  }
+}
 .footer__side {
   display: inline-block;
   padding-top: 2rem;
@@ -1095,6 +1100,11 @@ a {
 .section-footer {
   background-color: rgb(var(--grey-very-dark));
   padding: 15rem 0;
+}
+@media (max-width: 900px) {
+  .section-footer {
+    padding: 8rem 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

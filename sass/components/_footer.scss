@@ -1,6 +1,10 @@
 .footer{
     &__logo{
         margin-bottom: 7rem;
+
+        &-img{
+            @include respond(tab-port){height: 5rem;}
+        }
     }
 
     &__side{

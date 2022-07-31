@@ -64,4 +64,6 @@
 .section-footer{
     background-color: rgb(var(--grey-very-dark));
     padding: 15rem 0;
+
+    @include respond(tab-port){padding: 8rem 0;}
 }
