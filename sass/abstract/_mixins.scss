@@ -14,8 +14,9 @@
 }
 
 @mixin high-resolution{
-    @media (min-resolution: 192dpi) and (min-width: 900px)
-    , (min-width: 1800px){
+    @media (min-resolution: 192dpi) and (min-width: 900px),
+    (-webkit-min-device-pixel-ratio: 2) and (min-width: 900px),
+    (min-width: 1800px){
        @content;   
     }
 }
