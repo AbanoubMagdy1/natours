@@ -373,7 +373,7 @@ a {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
   position: relative;
 }
-@media (min-resolution: 192dpi) and (min-width: 600px), (min-width: 1800px) {
+@media (min-resolution: 192dpi) and (min-width: 900px), (min-width: 1800px) {
   .header {
     background-image: linear-gradient(to bottom right, rgba(var(--primary-light), 0.8), rgba(var(--primary-dark), 0.8)), url("../img/hero.jpg");
   }
@@ -694,13 +694,28 @@ a {
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
 }
 .card__photo-1 {
-  background-image: linear-gradient(to right, rgb(var(--secondary-light)), rgb(var(--secondary-dark))), url("../img/nat-5.jpg");
+  background-image: linear-gradient(to right, rgb(var(--secondary-light)), rgb(var(--secondary-dark))), url("../img/nat-5-small.jpg");
+}
+@media (min-resolution: 192dpi) and (min-width: 900px), (min-width: 1800px) {
+  .card__photo-1 {
+    background-image: linear-gradient(to right, rgb(var(--secondary-light)), rgb(var(--secondary-dark))), url("../img/nat-5.jpg");
+  }
 }
 .card__photo-2 {
-  background-image: linear-gradient(to right, rgb(var(--primary-light)), rgb(var(--primary-dark))), url("../img/nat-6.jpg");
+  background-image: linear-gradient(to right, rgb(var(--primary-light)), rgb(var(--primary-dark))), url("../img/nat-6-small.jpg");
+}
+@media (min-resolution: 192dpi) and (min-width: 900px), (min-width: 1800px) {
+  .card__photo-2 {
+    background-image: linear-gradient(to right, rgb(var(--primary-light)), rgb(var(--primary-dark))), url("../img/nat-6.jpg");
+  }
 }
 .card__photo-3 {
-  background-image: linear-gradient(to right, rgb(var(--tertiary-light)), rgb(var(--tertiary-dark))), url("../img/nat-7.jpg");
+  background-image: linear-gradient(to right, rgb(var(--tertiary-light)), rgb(var(--tertiary-dark))), url("../img/nat-7-small.jpg");
+}
+@media (min-resolution: 192dpi) and (min-width: 900px), (min-width: 1800px) {
+  .card__photo-3 {
+    background-image: linear-gradient(to right, rgb(var(--tertiary-light)), rgb(var(--tertiary-dark))), url("../img/nat-7.jpg");
+  }
 }
 .card__header {
   position: absolute;
@@ -823,19 +838,25 @@ a {
 
 .booking-card {
   max-width: calc(var(--grid-width));
+  max-width: 95%;
   margin: 0 auto;
   padding: 5rem;
   border-radius: 3px;
-  background-image: linear-gradient(105deg, rgba(var(--white), 0.9) 0%, rgba(var(--white), 0.9) 50%, transparent 50%, transparent 100%), url("../img/nat-10.jpg");
+  background-image: linear-gradient(105deg, rgba(var(--white), 0.9) 0%, rgba(var(--white), 0.9) 50%, transparent 50%, transparent 100%), url("../img/nat-10-small.jpg");
   background-size: cover;
   box-shadow: 0 1.5rem 3rem rgba(var(--black), 0.15);
+}
+@media (min-resolution: 192dpi) and (min-width: 900px), (min-width: 1800px) {
+  .booking-card {
+    background-image: linear-gradient(105deg, rgba(var(--white), 0.9) 0%, rgba(var(--white), 0.9) 50%, transparent 50%, transparent 100%), url("../img/nat-10.jpg");
+  }
 }
 @media (max-width: 900px) {
   .booking-card {
     max-width: 95%;
     margin: 2rem auto;
     padding: 4rem;
-    background-image: linear-gradient(rgba(var(--white), 0.9) 0%, rgba(var(--white), 0.9) 100%), url("../img/nat-10.jpg");
+    background-image: linear-gradient(rgba(var(--white), 0.9) 0%, rgba(var(--white), 0.9) 100%), url("../img/nat-10-small.jpg");
   }
 }
 .booking-card__form {
@@ -1064,7 +1085,7 @@ a {
 
 .section-features {
   padding: 25rem 0;
-  background-image: linear-gradient(to bottom right, rgba(var(--primary-light), 0.8), rgba(var(--primary-dark), 0.8)), url("../img/nat-4.jpg");
+  background-image: linear-gradient(to bottom right, rgba(var(--primary-light), 0.8), rgba(var(--primary-dark), 0.8)), url("../img/nat-4-small.jpg");
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem;
@@ -1072,6 +1093,11 @@ a {
 @media (max-width: 900px) {
   .section-features {
     padding: 18rem 0;
+  }
+}
+@media (min-resolution: 192dpi) and (min-width: 900px), (min-width: 1800px) {
+  .section-features {
+    background-image: linear-gradient(to bottom right, rgba(var(--primary-light), 0.8), rgba(var(--primary-dark), 0.8)), url("../img/nat-4.jpg");
   }
 }
 .section-features > * {

@@ -13,6 +13,13 @@
     transform: translate(-50%, -50%);
 }
 
+@mixin high-resolution{
+    @media (min-resolution: 192dpi) and (min-width: 900px)
+    , (min-width: 1800px){
+       @content;   
+    }
+}
+
 $screen-sizes: (
     "phone": 600px,
      "tab-port": 900px,
@@ -26,3 +33,4 @@ $screen-sizes: (
         @media (max-width: map-get($screen-sizes, $size)){@content}
     }
 }
+

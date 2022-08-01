@@ -15,12 +15,21 @@
         rgba(var(--primary-light),0.8),
         rgba(var(--primary-dark),0.8)
     ), 
-        url("../img/nat-4.jpg");
+        url("../img/nat-4-small.jpg");
     background-size: cover;
     transform: skewY(-7deg);
     margin-top: -10rem;
 
     @include respond(tab-port){padding: 18rem 0;}
+
+    @include high-resolution{
+        background-image: linear-gradient(
+            to bottom right,
+            rgba(var(--primary-light),0.8),
+            rgba(var(--primary-dark),0.8)
+        ), 
+            url("../img/nat-4.jpg");    
+    }
 
     > * {
         transform: skewY(7deg);

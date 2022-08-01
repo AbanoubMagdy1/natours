@@ -11,8 +11,7 @@
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
     position: relative;
 
-    @media (min-resolution: 192dpi) and (min-width: 600px)
-    , (min-width: 1800px){
+    @include high-resolution{
         background-image: linear-gradient(
             to bottom right,
             rgba(var(--primary-light),0.8),
